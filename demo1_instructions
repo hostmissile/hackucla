@@ -1,0 +1,35 @@
+make a new project
+show file directory
+go to AppDelegate
+	show `didFinishLaunchingWithOptions`
+	explain this is where the app detects when the app is opened or closed
+go to ViewController
+	this is the VC in MVC
+	show viewDidLoad and say its a built in function like the others (viewDidAppear)
+go to storyboard
+	explain the view that current shows is the View in MVC and is linked to the class ViewController.swift
+	explain various sidebars and show the storyboard-code side by side
+	explain what we're trying to make (minimal user profile: 3 labels (name, age, points) 2 button where some labels text are set in storyboard, some are programmatically set)
+	drag 3 labels into view
+	drag 2 button into view
+	rename them all
+	RUN IT! (make sure to resize the emulator screen scale)
+		Note: running emulator for the first time may cause it to take some time to "reload" the phone and run
+		- the buttons dont do anything now because we havent connected them with any code yet! this connection between the code and our view is called an IBOutlet
+	make IBOutlets 
+		hover over the outlet circles to show the corresponding label hilighted in the view
+		explain the IBOutlet variable declaration
+	make User class w/ name, age, points to be Model in MVC
+	set values of labels programmatically in viewDidLoad from User object
+	RUN IT
+	the initial value of labels can be set in Storyboard but assuming you want some dynamic content to show on first load, then setting values in viewDidLoad is how you do it
+	change the setting of pointsLabel to the value of self.points
+		self.pointsLabel.text = "\(self.user.points)"
+	make button IBActions
+		hover over IBAction circles
+		explain IBAction function signature
+	implement actions
+	RUN IT
+
+	DONE
+
