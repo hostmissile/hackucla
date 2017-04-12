@@ -20,14 +20,6 @@ var names1:[String] = [String]()
 var names2 = ["Annie", "Billy"]
 names2.append("Carl")
 
-// Dictionaries/Map (ie HashMap)
-var d = Dictionary<String, String>()
-var d2 = ["key": "object", "key2": "object 2"]
-d2["key3"] = "object 3"
-for (k, v) in d2 {
-    print("\(k) maps to \(v)")
-}
-
 // Control Flow
 score = 25
 if score > 25 {
