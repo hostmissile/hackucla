@@ -1,1 +1,1 @@
-# ACM Hack Project 1
+# ACM Hack Project
